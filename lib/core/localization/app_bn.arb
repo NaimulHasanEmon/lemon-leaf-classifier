@@ -1,0 +1,167 @@
+{
+  "@@locale": "bn",
+  "appTitle": "লেবু পাতা শ্রেণিবদ্ধকারী",
+  "@appTitle": {"description": "অ্যাপের শিরোনাম"},
+
+  "takePhoto": "ছবি তুলুন",
+  "@takePhoto": {},
+
+  "chooseFromGallery": "গ্যালারি থেকে বেছে নিন",
+  "@chooseFromGallery": {},
+
+  "prototypeBanner": "⚠ গবেষণা প্রোটোটাইপ — শুধুমাত্র সাদা শিট",
+  "@prototypeBanner": {},
+
+  "captureGuideTitle": "ছবি তোলার নির্দেশিকা",
+  "@captureGuideTitle": {},
+
+  "captureGuideInstructions": "একটি পাতা সমতল সাদা কাগজের উপর রাখুন, সমান প্রাকৃতিক আলোতে। পাতাটি ফ্রেমের ৩০–৪০% জুড়ে থাকা উচিত। কোনো ছায়া নয়। অন্য কোনো বস্তু নয়।",
+  "@captureGuideInstructions": {},
+
+  "resultTitle": "শ্রেণিবিভাগের ফলাফল",
+  "@resultTitle": {},
+
+  "topPrediction": "শীর্ষ পূর্বাভাস",
+  "@topPrediction": {},
+
+  "topThree": "শীর্ষ ৩ পূর্বাভাস",
+  "@topThree": {},
+
+  "cautionNotProbability": "আস্থা ভিন্ন আলো বা পটভূমিতে সঠিকতার সম্ভাবনা নয়।",
+  "@cautionNotProbability": {},
+
+  "cautionHlb": "HLB শুধুমাত্র PCR বা qPCR পরীক্ষাগার পরীক্ষার মাধ্যমে নিশ্চিত করা যায়।",
+  "@cautionHlb": {},
+
+  "cautionOverlap": "বিভিন্ন রোগের লক্ষণ একে অপরের মতো হতে পারে। এটি একটি গবেষণা প্রোটোটাইপ।",
+  "@cautionOverlap": {},
+
+  "abstainBannerTitle": "অনিশ্চিত",
+  "@abstainBannerTitle": {},
+
+  "abstainReason": "অনিশ্চিত ফলাফল — পুনরায় তুলুন বা বিশেষজ্ঞের সাথে পরামর্শ করুন",
+  "@abstainReason": {},
+
+  "retake": "পুনরায় তুলুন",
+  "@retake": {},
+
+  "qualityFailTitle": "ছবির মান সমস্যা",
+  "@qualityFailTitle": {},
+
+  "historyTitle": "শ্রেণিবিভাগের ইতিহাস",
+  "@historyTitle": {},
+
+  "exportCsv": "CSV রপ্তানি করুন",
+  "@exportCsv": {},
+
+  "deleteAll": "সব মুছুন",
+  "@deleteAll": {},
+
+  "deleteAllConfirm": "সমস্ত ইতিহাস মুছবেন? এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+  "@deleteAllConfirm": {},
+
+  "confirm": "নিশ্চিত করুন",
+  "@confirm": {},
+
+  "cancel": "বাতিল করুন",
+  "@cancel": {},
+
+  "settingsTitle": "সেটিংস",
+  "@settingsTitle": {},
+
+  "languageLabel": "ভাষা",
+  "@languageLabel": {},
+
+  "english": "English",
+  "@english": {},
+
+  "bangla": "বাংলা",
+  "@bangla": {},
+
+  "privacyNote": "সমস্ত প্রক্রিয়াকরণ আপনার ডিভাইসে স্থানীয়ভাবে করা হয়। ইন্টারনেটে কোনো ডেটা পাঠানো হয় না।",
+  "@privacyNote": {},
+
+  "aboutTitle": "সম্পর্কে",
+  "@aboutTitle": {},
+
+  "aboutModelPerformance": "মডেলের কার্যক্ষমতা",
+  "@aboutModelPerformance": {},
+
+  "aboutAccuracy": "নির্ভুলতা",
+  "@aboutAccuracy": {},
+
+  "aboutBalancedAccuracy": "ভারসাম্যপূর্ণ নির্ভুলতা",
+  "@aboutBalancedAccuracy": {},
+
+  "aboutMacroF1": "ম্যাক্রো F1",
+  "@aboutMacroF1": {},
+
+  "aboutPerClassRecall": "প্রতি শ্রেণির রিকল",
+  "@aboutPerClassRecall": {},
+
+  "aboutExternalValidation": "বাহ্যিক যাচাইকরণ",
+  "@aboutExternalValidation": {},
+
+  "aboutExternalValidationFailed": "এই মডেলটি প্রাকৃতিক পটভূমির ছবিতে বাহ্যিক যাচাইকরণে ব্যর্থ হয়েছে। এটি শুধুমাত্র সাদা শিট ফটোগ্রাফির জন্য ডিজাইন করা হয়েছে।",
+  "@aboutExternalValidationFailed": {},
+
+  "aboutWhiteSheetWarning": "সাদা শিট প্রোটোটাইপ সতর্কতা",
+  "@aboutWhiteSheetWarning": {},
+
+  "aboutWhiteSheetDetail": "এই প্রোটোটাইপটি সাদা শিটের বিপরীতে তোলা ছবিতে প্রশিক্ষিত। অন্য পটভূমিতে কার্যক্ষমতা যাচাই করা হয়নি।",
+  "@aboutWhiteSheetDetail": {},
+
+  "aboutDataset": "ডেটাসেট ও লাইসেন্স",
+  "@aboutDataset": {},
+
+  "aboutDatasetDetail": "গবেষণা উদ্দেশ্যে ডেটাসেট তৈরি করা হয়েছে। পূর্ণ লাইসেন্স বিবরণের জন্য প্রকল্পের ডকুমেন্টেশন দেখুন।",
+  "@aboutDatasetDetail": {},
+
+  "parityScreenTitle": "প্যারিটি চেক (ডিবাগ)",
+  "@parityScreenTitle": {},
+
+  "parityRunning": "প্যারিটি চেক চলছে…",
+  "@parityRunning": {},
+
+  "parityMaxAbsDiff": "সর্বোচ্চ পরম পার্থক্য",
+  "@parityMaxAbsDiff": {},
+
+  "parityTop1Agreement": "শীর্ষ-১ সামঞ্জস্য",
+  "@parityTop1Agreement": {},
+
+  "parityPassed": "উত্তীর্ণ",
+  "@parityPassed": {},
+
+  "parityFailed": "ব্যর্থ",
+  "@parityFailed": {},
+
+  "firstLaunchTitle": "গুরুত্বপূর্ণ বিজ্ঞপ্তি",
+  "@firstLaunchTitle": {},
+
+  "firstLaunchBody": "এটি সাদা শিট ফটোগ্রাফির জন্য একটি গবেষণা প্রোটোটাইপ। প্রাকৃতিক পটভূমির ছবিতে এটি বাহ্যিক যাচাইকরণে ব্যর্থ হয়েছে। চিকিৎসার সিদ্ধান্তের জন্য ব্যবহার করবেন না।",
+  "@firstLaunchBody": {},
+
+  "iUnderstand": "আমি বুঝেছি",
+  "@iUnderstand": {},
+
+  "noHistoryYet": "এখনো কোনো শ্রেণিবিভাগ নেই।",
+  "@noHistoryYet": {},
+
+  "confidence": "আস্থা",
+  "@confidence": {},
+
+  "blurryImage": "ছবি অস্পষ্ট",
+  "@blurryImage": {},
+
+  "tooDark": "ছবি অনেক অন্ধকার",
+  "@tooDark": {},
+
+  "tooBright": "ছবি অনেক উজ্জ্বল",
+  "@tooBright": {},
+
+  "backgroundNotWhite": "পটভূমি যথেষ্ট সাদা নয় — পাতাটি সাদা কাগজের উপর রাখুন",
+  "@backgroundNotWhite": {},
+
+  "saturationOutOfRange": "রঙের স্যাচুরেশন পরিসীমার বাইরে",
+  "@saturationOutOfRange": {}
+}

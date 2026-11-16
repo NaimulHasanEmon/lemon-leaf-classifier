@@ -1,0 +1,97 @@
+{
+  "description": "Capture-quality thresholds derived from training images only.",
+  "images_used": "Training images from folds 0,1,3,4 (n=1245, NOT fold 2 validation, NOT test set)",
+  "metrics": {
+    "sharpness": {
+      "definition": "Variance of Laplacian of grayscale image",
+      "values_summary": {
+        "mean": 731.4528427185304,
+        "std": 303.99059943784334,
+        "min": 76.35671997070312,
+        "max": 2818.896484375
+      },
+      "percentiles": {
+        "1": 209.67474548339842,
+        "5": 308.8868041992188,
+        "50": 701.8619384765625,
+        "95": 1246.6516357421874,
+        "99": 1701.743168945308
+      }
+    },
+    "exposure": {
+      "definition": "Mean pixel brightness (0-1 scale)",
+      "values_summary": {
+        "mean": 0.7632338464256103,
+        "std": 0.04861579891086013,
+        "min": 0.4830283082561728,
+        "max": 0.9161789261783996
+      },
+      "percentiles": {
+        "1": 0.6252622144778051,
+        "5": 0.6840292812726942,
+        "50": 0.7618938592870598,
+        "95": 0.8424232969374094,
+        "99": 0.8708290682303013
+      }
+    },
+    "border_brightness": {
+      "definition": "Mean brightness of border pixels (outer 5% on each side)",
+      "values_summary": {
+        "mean": 0.9857820306279584,
+        "std": 0.009161401964307885,
+        "min": 0.8822730334823988,
+        "max": 0.999932051585254
+      },
+      "percentiles": {
+        "1": 0.9451720380403623,
+        "5": 0.9740585852396515,
+        "50": 0.9874420848383213,
+        "95": 0.9943135104919161,
+        "99": 0.9974548611111111
+      }
+    },
+    "saturation": {
+      "definition": "Mean HSV saturation (0-1 scale)",
+      "values_summary": {
+        "mean": 0.2187274843514205,
+        "std": 0.0485637072456616,
+        "min": 0.07246143370866776,
+        "max": 0.5028374791145325
+      },
+      "percentiles": {
+        "1": 0.11685005217790603,
+        "5": 0.14027724862098695,
+        "50": 0.21812105178833008,
+        "95": 0.29486811757087705,
+        "99": 0.33983328342437724
+      }
+    }
+  },
+  "gate": {
+    "sharpness": {
+      "lower": 209.67474548339842,
+      "direction": "reject if < lower (too blurry)",
+      "threshold_pct": 1
+    },
+    "exposure": {
+      "lower": 0.6252622144778051,
+      "upper": 0.8708290682303013,
+      "direction": "reject if < lower (too dark) or > upper (too bright)",
+      "threshold_pct_lower": 1,
+      "threshold_pct_upper": 99
+    },
+    "border_brightness": {
+      "lower": 0.9451720380403623,
+      "direction": "reject if < lower (background not white enough)",
+      "threshold_pct": 1
+    },
+    "saturation": {
+      "lower": 0.11685005217790603,
+      "upper": 0.33983328342437724,
+      "direction": "reject if < lower (monochrome) or > upper (oversaturated)",
+      "threshold_pct_lower": 1,
+      "threshold_pct_upper": 99
+    }
+  },
+  "border_fraction": 0.05
+}

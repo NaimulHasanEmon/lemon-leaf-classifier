@@ -1,0 +1,37 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+
+# Android / Gradle
+.gradle/
+**/.gradle/
+**/build/
+local.properties
+**/local.properties
+*.iml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large ONNX model: publish through GitHub Releases
+/assets/models/*.onnx
+
+# Signing credentials
+*.jks
+*.keystore
+key.properties
+
+# Temporary files
+*.log
+*.tmp

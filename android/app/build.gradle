@@ -1,0 +1,54 @@
+// app/build.gradle — module-level build file.
+// Android build configuration. Minimum supported Android version: API 24 (Android 7.0).
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // Flutter Gradle plugin must come last.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "edu.research.lemon_leaf_classifier"
+    compileSdk 36
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId "edu.research.lemon_leaf_classifier"
+        minSdk 24          // Android 7.0
+        targetSdk flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    // ─── Critical: store .onnx uncompressed so ORT can mmap it ───
+    androidResources {
+        noCompress "onnx"
+    }
+
+    buildTypes {
+        release {
+            // Signing handled outside; for prototype, use debug key.
+            signingConfig signingConfigs.debug
+            minifyEnabled false   // keep false: ORT loads native libs by name
+            shrinkResources false
+        }
+    }
+}
+
+flutter {
+    source "../.."
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10"
+}

@@ -1,0 +1,78 @@
+name: lemon_leaf_classifier
+description: >
+  Offline lemon-leaf condition classifier using a ConvNeXt-Tiny ONNX model.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.5"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ONNX Runtime â€” pub.dev package by gtbluesky.
+  # v1.4.1; ships pre-built ORT ~1.17 native .so via jniLibs.
+  onnxruntime: "1.4.1"
+
+  # Camera & image picking
+  camera: "^0.10.5+9"
+  image_picker: "^1.1.2"
+
+  # Image processing â€” pure Dart
+  image: "^4.2.0"
+
+  # EXIF orientation on Android
+  native_exif: "^0.7.0"
+
+  # Persistence
+  sqflite: "^2.3.3+1"
+  path_provider: "^2.1.4"
+  path: "^1.9.0"
+
+  # Share / export
+  share_plus: "^10.0.0"
+
+  # Settings storage
+  shared_preferences: "^2.3.2"
+
+  # Navigation
+  go_router: "^14.2.7"
+
+  # JSON models
+  json_annotation: "^4.9.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: "^4.0.0"
+  json_serializable: "^6.8.0"
+  build_runner: "^2.4.13"
+  flutter_launcher_icons: "^0.14.3"
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/lemon_leaf_app.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#5B8C00"
+  adaptive_icon_foreground: "assets/images/lemon_leaf_app.png"
+  web:
+    generate: false
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # App header / icon source image
+    - assets/images/lemon_leaf_app.png
+    # Deployed FP32 ONNX model (download separately; see assets/models/README.md)
+    - assets/models/convnext_tiny_320_f2_fp32.onnx
+    # Runtime configuration
+    - assets/config/model_card.json
+    - assets/config/thresholds.json
+    - assets/config/quality_gate_golden.json
+    - assets/config/eval_results.json
+    # Parity / golden-logit test images (100 PNGs + JSON) â€” debug use
+    - assets/parity/

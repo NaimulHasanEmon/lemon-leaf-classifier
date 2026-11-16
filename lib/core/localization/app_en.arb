@@ -1,0 +1,167 @@
+{
+  "@@locale": "en",
+  "appTitle": "Lemon Leaf Classifier",
+  "@appTitle": {"description": "The app title shown in AppBar and About screen"},
+
+  "takePhoto": "Take Photo",
+  "@takePhoto": {"description": "Button label on home screen"},
+
+  "chooseFromGallery": "Choose from Gallery",
+  "@chooseFromGallery": {"description": "Button label on home screen"},
+
+  "prototypeBanner": "⚠ Research Prototype — White-Sheet Only",
+  "@prototypeBanner": {"description": "Warning banner on home screen"},
+
+  "captureGuideTitle": "Capture Guide",
+  "@captureGuideTitle": {},
+
+  "captureGuideInstructions": "Place one leaf flat on a plain WHITE sheet of paper under even, natural light. The leaf should fill 30–40% of the frame. No shadows. No other objects.",
+  "@captureGuideInstructions": {},
+
+  "resultTitle": "Classification Result",
+  "@resultTitle": {},
+
+  "topPrediction": "Top Prediction",
+  "@topPrediction": {},
+
+  "topThree": "Top 3 Predictions",
+  "@topThree": {},
+
+  "cautionNotProbability": "Confidence is not a probability of correctness under different lighting or backgrounds.",
+  "@cautionNotProbability": {},
+
+  "cautionHlb": "HLB is only confirmed by PCR or qPCR laboratory testing.",
+  "@cautionHlb": {},
+
+  "cautionOverlap": "Symptoms of different conditions can overlap. This is a research prototype.",
+  "@cautionOverlap": {},
+
+  "abstainBannerTitle": "Uncertain",
+  "@abstainBannerTitle": {},
+
+  "abstainReason": "Uncertain result — please retake or consult an expert",
+  "@abstainReason": {},
+
+  "retake": "Retake",
+  "@retake": {},
+
+  "qualityFailTitle": "Image Quality Issue",
+  "@qualityFailTitle": {},
+
+  "historyTitle": "Classification History",
+  "@historyTitle": {},
+
+  "exportCsv": "Export CSV",
+  "@exportCsv": {},
+
+  "deleteAll": "Delete All",
+  "@deleteAll": {},
+
+  "deleteAllConfirm": "Delete all history? This cannot be undone.",
+  "@deleteAllConfirm": {},
+
+  "confirm": "Confirm",
+  "@confirm": {},
+
+  "cancel": "Cancel",
+  "@cancel": {},
+
+  "settingsTitle": "Settings",
+  "@settingsTitle": {},
+
+  "languageLabel": "Language",
+  "@languageLabel": {},
+
+  "english": "English",
+  "@english": {},
+
+  "bangla": "বাংলা",
+  "@bangla": {},
+
+  "privacyNote": "All processing is done locally on your device. No data is sent over the internet.",
+  "@privacyNote": {},
+
+  "aboutTitle": "About",
+  "@aboutTitle": {},
+
+  "aboutModelPerformance": "Model Performance",
+  "@aboutModelPerformance": {},
+
+  "aboutAccuracy": "Accuracy",
+  "@aboutAccuracy": {},
+
+  "aboutBalancedAccuracy": "Balanced Accuracy",
+  "@aboutBalancedAccuracy": {},
+
+  "aboutMacroF1": "Macro F1",
+  "@aboutMacroF1": {},
+
+  "aboutPerClassRecall": "Per-Class Recall",
+  "@aboutPerClassRecall": {},
+
+  "aboutExternalValidation": "External Validation",
+  "@aboutExternalValidation": {},
+
+  "aboutExternalValidationFailed": "This model FAILED external validation on natural-background images. It is designed exclusively for white-sheet photography.",
+  "@aboutExternalValidationFailed": {},
+
+  "aboutWhiteSheetWarning": "White-Sheet Prototype Warning",
+  "@aboutWhiteSheetWarning": {},
+
+  "aboutWhiteSheetDetail": "This prototype is trained on images taken against a plain white sheet. Performance on other backgrounds is not validated.",
+  "@aboutWhiteSheetDetail": {},
+
+  "aboutDataset": "Dataset & Licence",
+  "@aboutDataset": {},
+
+  "aboutDatasetDetail": "Dataset curated for research purposes. Model weights © respective authors. See project documentation for full licence details.",
+  "@aboutDatasetDetail": {},
+
+  "parityScreenTitle": "Parity Check (Debug)",
+  "@parityScreenTitle": {},
+
+  "parityRunning": "Running parity check…",
+  "@parityRunning": {},
+
+  "parityMaxAbsDiff": "Max Abs Diff",
+  "@parityMaxAbsDiff": {},
+
+  "parityTop1Agreement": "Top-1 Agreement",
+  "@parityTop1Agreement": {},
+
+  "parityPassed": "PASSED",
+  "@parityPassed": {},
+
+  "parityFailed": "FAILED",
+  "@parityFailed": {},
+
+  "firstLaunchTitle": "Important Notice",
+  "@firstLaunchTitle": {},
+
+  "firstLaunchBody": "This is a research prototype for white-sheet photography. It FAILED external validation on natural-background images. Do not use for treatment decisions.",
+  "@firstLaunchBody": {},
+
+  "iUnderstand": "I Understand",
+  "@iUnderstand": {},
+
+  "noHistoryYet": "No classifications yet.",
+  "@noHistoryYet": {},
+
+  "confidence": "Confidence",
+  "@confidence": {},
+
+  "blurryImage": "Image too blurry",
+  "@blurryImage": {},
+
+  "tooDark": "Image too dark",
+  "@tooDark": {},
+
+  "tooBright": "Image too bright",
+  "@tooBright": {},
+
+  "backgroundNotWhite": "Background not white enough — place leaf on plain white sheet",
+  "@backgroundNotWhite": {},
+
+  "saturationOutOfRange": "Colour saturation out of range",
+  "@saturationOutOfRange": {}
+}

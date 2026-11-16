@@ -1,0 +1,1430 @@
+{
+  "description": "Golden PyTorch logits for 100 parity test images.",
+  "model": "convnext_tiny",
+  "input_resolution": 320,
+  "mean": [
+    0.48500001430511475,
+    0.4560000002384186,
+    0.4059999883174896
+  ],
+  "std": [
+    0.2290000021457672,
+    0.2240000069141388,
+    0.22499999403953552
+  ],
+  "preprocessing": [
+    "uint8 NHWC -> float NCHW / 255",
+    "F.interpolate(384->320, bilinear, antialias=True, align_corners=False)",
+    "(x - mean) / std"
+  ],
+  "torch_version": "2.8.0+cpu",
+  "classes": [
+    "citrus_huanglongbing",
+    "citrus_leaf_curl",
+    "citrus_leafminer",
+    "healthy_lemon_leaf",
+    "swallowtail_herbivory"
+  ],
+  "images": [
+    {
+      "filename": "00_citrus_huanglongbing_00002.png",
+      "img_idx": 2,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.409503936767578,
+        -0.4939512610435486,
+        -1.58543062210083,
+        -1.475677490234375,
+        0.9581097364425659
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00005.png",
+      "img_idx": 5,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.2654643058776855,
+        -1.2976548671722412,
+        -1.1062499284744263,
+        -0.5884352922439575,
+        0.35768038034439087
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00006.png",
+      "img_idx": 6,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        4.595231056213379,
+        -0.7806828022003174,
+        -0.34635674953460693,
+        -2.9957902431488037,
+        -0.7091395258903503
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00012.png",
+      "img_idx": 12,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.9385433197021484,
+        -0.6215080618858337,
+        -0.5973271131515503,
+        -1.0324612855911255,
+        -1.6566452980041504
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00014.png",
+      "img_idx": 14,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.349926233291626,
+        2.03887677192688,
+        -0.8926771879196167,
+        -0.1547749936580658,
+        -2.645720958709717
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00016.png",
+      "img_idx": 16,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.7943572998046875,
+        1.3658626079559326,
+        -1.9774411916732788,
+        -0.49018770456314087,
+        -1.5902096033096313
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00035.png",
+      "img_idx": 35,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.886690139770508,
+        -0.3743346929550171,
+        0.19993822276592255,
+        -1.614569067955017,
+        -2.104313850402832
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00040.png",
+      "img_idx": 40,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.695784568786621,
+        3.103861093521118,
+        -0.5507878065109253,
+        -2.422041416168213,
+        -2.462164878845215
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00046.png",
+      "img_idx": 46,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.1832685470581055,
+        -0.453376829624176,
+        -0.5526243448257446,
+        0.19054904580116272,
+        -1.7551953792572021
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00049.png",
+      "img_idx": 49,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.7094154357910156,
+        0.202289879322052,
+        -1.442293405532837,
+        0.6111876964569092,
+        -1.2994182109832764
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00058.png",
+      "img_idx": 58,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.3468780517578125,
+        -0.48850488662719727,
+        -0.8947826027870178,
+        0.5941683650016785,
+        -2.0063610076904297
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00065.png",
+      "img_idx": 65,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.2670211791992188,
+        -1.3885576725006104,
+        -1.0611364841461182,
+        -0.40686726570129395,
+        0.34676244854927063
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00069.png",
+      "img_idx": 69,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        1.5660357475280762,
+        -0.7093824148178101,
+        3.1053457260131836,
+        -2.325221538543701,
+        -2.143221378326416
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00081.png",
+      "img_idx": 81,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.4180893898010254,
+        -0.15764430165290833,
+        -1.5349793434143066,
+        -1.9075953960418701,
+        1.729712724685669
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00085.png",
+      "img_idx": 85,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.2164435386657715,
+        -0.2576363980770111,
+        0.1626523733139038,
+        -1.8647434711456299,
+        -1.346181035041809
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00087.png",
+      "img_idx": 87,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        3.038325071334839,
+        0.4722729027271271,
+        -1.1413216590881348,
+        -0.3060116767883301,
+        -2.2404770851135254
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00103.png",
+      "img_idx": 103,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        2.5863895416259766,
+        -0.7197543382644653,
+        -0.49504542350769043,
+        0.6473444700241089,
+        -1.532038688659668
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00110.png",
+      "img_idx": 110,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        1.1143085956573486,
+        -0.3961141109466553,
+        -0.5002719163894653,
+        -1.9254398345947266,
+        1.8239433765411377
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00131.png",
+      "img_idx": 131,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        4.9869771003723145,
+        -0.7306593656539917,
+        -1.2188529968261719,
+        -0.996781587600708,
+        -2.208913564682007
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "00_citrus_huanglongbing_00142.png",
+      "img_idx": 142,
+      "class": "citrus_huanglongbing",
+      "class_idx": 0,
+      "logits": [
+        4.439716339111328,
+        -0.5704746246337891,
+        -1.089270830154419,
+        -0.9576819539070129,
+        -1.6296477317810059
+      ],
+      "prediction": 0
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00148.png",
+      "img_idx": 148,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.2450413703918457,
+        3.195607900619507,
+        0.8333072066307068,
+        -1.5439108610153198,
+        -2.389737367630005
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00173.png",
+      "img_idx": 173,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.15701118111610413,
+        1.7063183784484863,
+        0.2382531762123108,
+        -1.5069570541381836,
+        -0.4110448360443115
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00209.png",
+      "img_idx": 209,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.21519887447357178,
+        2.673614025115967,
+        1.0587434768676758,
+        -1.7274059057235718,
+        -2.1153268814086914
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00211.png",
+      "img_idx": 211,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        1.1522760391235352,
+        2.5738840103149414,
+        -1.0209605693817139,
+        -0.1330946385860443,
+        -1.6470437049865723
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00214.png",
+      "img_idx": 214,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.7877124547958374,
+        4.499828338623047,
+        -1.5188159942626953,
+        -2.820939779281616,
+        -0.8079378604888916
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00235.png",
+      "img_idx": 235,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.3261805474758148,
+        3.7215194702148438,
+        -1.3847880363464355,
+        -2.5445258617401123,
+        0.117819644510746
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00252.png",
+      "img_idx": 252,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.4740757346153259,
+        3.2388315200805664,
+        -0.853318989276886,
+        -0.47426173090934753,
+        -1.9260764122009277
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00257.png",
+      "img_idx": 257,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.7895376086235046,
+        3.555284023284912,
+        -1.405081033706665,
+        -1.8243060111999512,
+        -0.0007036775350570679
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00274.png",
+      "img_idx": 274,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.20754572749137878,
+        1.5241129398345947,
+        1.5215357542037964,
+        -0.8868804574012756,
+        -1.2721805572509766
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00278.png",
+      "img_idx": 278,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        1.2721443176269531,
+        3.828064441680908,
+        -0.7662270665168762,
+        -1.2865777015686035,
+        -2.355682373046875
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00288.png",
+      "img_idx": 288,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        2.08028507232666,
+        2.9474573135375977,
+        0.8636002540588379,
+        -2.604687213897705,
+        -3.022386074066162
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00289.png",
+      "img_idx": 289,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.08229310810565948,
+        3.3298120498657227,
+        1.3161859512329102,
+        -2.1284842491149902,
+        -1.9451508522033691
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00293.png",
+      "img_idx": 293,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.2530612349510193,
+        2.216594696044922,
+        1.0298285484313965,
+        -2.1886889934539795,
+        -0.7053197026252747
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00331.png",
+      "img_idx": 331,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        1.172910451889038,
+        4.827500343322754,
+        -0.5854828357696533,
+        -2.354579210281372,
+        -2.4234280586242676
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00372.png",
+      "img_idx": 372,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.8479499816894531,
+        2.3149685859680176,
+        1.7768534421920776,
+        -3.113417625427246,
+        -1.6525537967681885
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00383.png",
+      "img_idx": 383,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.7617943286895752,
+        -0.006972968578338623,
+        0.1606822907924652,
+        -1.4486536979675293,
+        1.2704699039459229
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00387.png",
+      "img_idx": 387,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.5328375101089478,
+        4.031777381896973,
+        -0.7859243154525757,
+        -1.6297898292541504,
+        -1.557793378829956
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00403.png",
+      "img_idx": 403,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.22386467456817627,
+        2.131178379058838,
+        2.2534687519073486,
+        -2.8509297370910645,
+        -1.6905057430267334
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00406.png",
+      "img_idx": 406,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        0.4224412739276886,
+        3.9511518478393555,
+        0.4873635768890381,
+        -2.4861092567443848,
+        -2.458622694015503
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "01_citrus_leaf_curl_00408.png",
+      "img_idx": 408,
+      "class": "citrus_leaf_curl",
+      "class_idx": 1,
+      "logits": [
+        -0.10876883566379547,
+        2.6887691020965576,
+        0.46921586990356445,
+        -2.137053966522217,
+        -0.24623964726924896
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "02_citrus_leafminer_00443.png",
+      "img_idx": 443,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        0.7171084880828857,
+        0.6337030529975891,
+        2.3080148696899414,
+        -1.8205540180206299,
+        -1.495102882385254
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00449.png",
+      "img_idx": 449,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.434469997882843,
+        1.64920973777771,
+        1.7766578197479248,
+        -2.163583278656006,
+        -1.1174415349960327
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00453.png",
+      "img_idx": 453,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        0.3631359934806824,
+        1.2801259756088257,
+        2.3573317527770996,
+        -2.600869655609131,
+        -2.2485828399658203
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00494.png",
+      "img_idx": 494,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.6544003486633301,
+        -1.0050263404846191,
+        3.6613214015960693,
+        -1.863189935684204,
+        -0.6825625896453857
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00495.png",
+      "img_idx": 495,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.3980480432510376,
+        0.7839608192443848,
+        2.8844046592712402,
+        -2.1876633167266846,
+        -2.2608892917633057
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00500.png",
+      "img_idx": 500,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.30326583981513977,
+        0.2497335821390152,
+        2.1250011920928955,
+        -2.542146682739258,
+        0.09656177461147308
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00507.png",
+      "img_idx": 507,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.13670343160629272,
+        -0.8228040933609009,
+        2.3647422790527344,
+        -2.4847729206085205,
+        0.8795325756072998
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00516.png",
+      "img_idx": 516,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.3558502495288849,
+        -0.380876362323761,
+        3.972835063934326,
+        -2.4510865211486816,
+        -1.5996429920196533
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00547.png",
+      "img_idx": 547,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.4029523432254791,
+        0.017270617187023163,
+        2.5853586196899414,
+        -0.4698215126991272,
+        -1.4339206218719482
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00578.png",
+      "img_idx": 578,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.2428482621908188,
+        0.9081236124038696,
+        2.801302433013916,
+        -2.251110315322876,
+        -1.5436460971832275
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00582.png",
+      "img_idx": 582,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.396474689245224,
+        1.2912883758544922,
+        2.5416557788848877,
+        -2.335463762283325,
+        -1.960946798324585
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00632.png",
+      "img_idx": 632,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        0.4786720871925354,
+        -1.1618926525115967,
+        3.0226340293884277,
+        -0.9900649785995483,
+        -1.1966702938079834
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00668.png",
+      "img_idx": 668,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.5010201334953308,
+        -0.3367149829864502,
+        3.904431104660034,
+        -2.0087392330169678,
+        -2.107450485229492
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00690.png",
+      "img_idx": 690,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        0.14222867786884308,
+        0.10901030898094177,
+        3.193274974822998,
+        -2.1661791801452637,
+        -1.7321178913116455
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00704.png",
+      "img_idx": 704,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.3535638451576233,
+        -0.004874423146247864,
+        3.5452218055725098,
+        -1.6533697843551636,
+        -1.758887529373169
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00708.png",
+      "img_idx": 708,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.19724003970623016,
+        0.2785232663154602,
+        3.1026530265808105,
+        -2.1443076133728027,
+        -1.8041114807128906
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00712.png",
+      "img_idx": 712,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.7434555888175964,
+        -0.3247392773628235,
+        3.9643683433532715,
+        -2.1130599975585938,
+        -1.4627008438110352
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00727.png",
+      "img_idx": 727,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.2727505564689636,
+        0.754075288772583,
+        2.8603391647338867,
+        -1.7632911205291748,
+        -1.3375892639160156
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00749.png",
+      "img_idx": 749,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        0.209055557847023,
+        -0.05806078016757965,
+        3.1991567611694336,
+        -2.6820807456970215,
+        -1.354949712753296
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "02_citrus_leafminer_00765.png",
+      "img_idx": 765,
+      "class": "citrus_leafminer",
+      "class_idx": 2,
+      "logits": [
+        -0.7487732768058777,
+        0.6117766499519348,
+        3.432506561279297,
+        -1.996573567390442,
+        -1.9688730239868164
+      ],
+      "prediction": 2
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_00877.png",
+      "img_idx": 877,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.16049206256866455,
+        -0.6914513111114502,
+        -0.8116815090179443,
+        2.9282989501953125,
+        0.05275681987404823
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_00883.png",
+      "img_idx": 883,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.9278007745742798,
+        0.38341763615608215,
+        -1.0160396099090576,
+        1.6009607315063477,
+        -0.9480042457580566
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_00893.png",
+      "img_idx": 893,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.8749692440032959,
+        0.1501900553703308,
+        -0.9125030040740967,
+        2.6869211196899414,
+        -1.5287809371948242
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_00913.png",
+      "img_idx": 913,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.5376949310302734,
+        -0.3187791109085083,
+        -0.5419355034828186,
+        2.9866535663604736,
+        -1.263946771621704
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_00920.png",
+      "img_idx": 920,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.4358665347099304,
+        -0.2785145044326782,
+        -0.6637624502182007,
+        3.1708602905273438,
+        -1.1872520446777344
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_00984.png",
+      "img_idx": 984,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.3947790861129761,
+        -0.3858191967010498,
+        -0.5622023344039917,
+        3.1889705657958984,
+        -0.9378209114074707
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01013.png",
+      "img_idx": 1013,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.7409045100212097,
+        -0.307425320148468,
+        -0.7794947624206543,
+        2.885568618774414,
+        -1.1265510320663452
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01057.png",
+      "img_idx": 1057,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.8447153568267822,
+        -0.8057904243469238,
+        -0.7485809326171875,
+        2.790679931640625,
+        -0.6259375810623169
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01075.png",
+      "img_idx": 1075,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        1.2639949321746826,
+        -0.755912184715271,
+        -1.0964546203613281,
+        2.9581568241119385,
+        -1.0592035055160522
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01080.png",
+      "img_idx": 1080,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.1940849870443344,
+        -0.4613248109817505,
+        -0.62257319688797,
+        3.1446046829223633,
+        -0.4578988552093506
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01121.png",
+      "img_idx": 1121,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.5538002848625183,
+        -0.5793365240097046,
+        -0.6229739785194397,
+        3.1244077682495117,
+        -0.9486292600631714
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01122.png",
+      "img_idx": 1122,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.30560022592544556,
+        -0.6428866386413574,
+        -0.634719729423523,
+        3.1364760398864746,
+        -0.602288007736206
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01129.png",
+      "img_idx": 1129,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.4526301622390747,
+        -0.6492894887924194,
+        -0.737144410610199,
+        3.189220428466797,
+        -0.762259304523468
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01135.png",
+      "img_idx": 1135,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.020093433558940887,
+        -0.5085083246231079,
+        -0.7192683219909668,
+        3.383934736251831,
+        -0.4903339147567749
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01241.png",
+      "img_idx": 1241,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.23624971508979797,
+        -0.4903789758682251,
+        -0.7714903950691223,
+        3.062462329864502,
+        -0.5710797905921936
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01265.png",
+      "img_idx": 1265,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        1.5136581659317017,
+        -0.5014438629150391,
+        -1.0888441801071167,
+        2.7855539321899414,
+        -1.307422161102295
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01290.png",
+      "img_idx": 1290,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.47991394996643066,
+        -0.47022467851638794,
+        -0.6986069083213806,
+        3.1585497856140137,
+        -0.9023228287696838
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01403.png",
+      "img_idx": 1403,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.4064088463783264,
+        -0.8351497054100037,
+        -0.8085574507713318,
+        3.217883825302124,
+        -0.4188947379589081
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01434.png",
+      "img_idx": 1434,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        1.3062117099761963,
+        -0.7710423469543457,
+        -0.7536327838897705,
+        2.680135726928711,
+        -1.036943793296814
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "03_healthy_lemon_leaf_01447.png",
+      "img_idx": 1447,
+      "class": "healthy_lemon_leaf",
+      "class_idx": 3,
+      "logits": [
+        0.5553528070449829,
+        -0.26997435092926025,
+        -0.8559143543243408,
+        3.270770311355591,
+        -1.1344447135925293
+      ],
+      "prediction": 3
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01497.png",
+      "img_idx": 1497,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        -0.0012975260615348816,
+        0.5142760872840881,
+        -1.7581501007080078,
+        -2.2464659214019775,
+        3.3215487003326416
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01528.png",
+      "img_idx": 1528,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.5836551785469055,
+        0.04601507633924484,
+        -1.8616588115692139,
+        -2.289393901824951,
+        3.080078601837158
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01542.png",
+      "img_idx": 1542,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        -0.2728356122970581,
+        -0.37595707178115845,
+        -1.3075083494186401,
+        -1.9481329917907715,
+        3.7321536540985107
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01635.png",
+      "img_idx": 1635,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.17002937197685242,
+        0.26298555731773376,
+        -1.503668189048767,
+        -1.8373503684997559,
+        3.0512027740478516
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01637.png",
+      "img_idx": 1637,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.2942591905593872,
+        -0.8880409002304077,
+        -1.1103248596191406,
+        -0.629715621471405,
+        3.0212883949279785
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01655.png",
+      "img_idx": 1655,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.03779985010623932,
+        -0.17352913320064545,
+        -1.7630996704101562,
+        -1.2524762153625488,
+        3.624251365661621
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01670.png",
+      "img_idx": 1670,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.6454681754112244,
+        -1.090838074684143,
+        -1.0854501724243164,
+        -1.558257818222046,
+        3.2177348136901855
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01676.png",
+      "img_idx": 1676,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.5845860838890076,
+        -0.4399568438529968,
+        -1.1074720621109009,
+        -1.7011387348175049,
+        2.925812244415283
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01717.png",
+      "img_idx": 1717,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.07435642927885056,
+        -0.3350495994091034,
+        -1.7349172830581665,
+        -1.9283785820007324,
+        3.7822036743164062
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01782.png",
+      "img_idx": 1782,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        1.2355616092681885,
+        1.4244593381881714,
+        -1.5778484344482422,
+        -2.2387866973876953,
+        1.501100778579712
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01794.png",
+      "img_idx": 1794,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        1.9129488468170166,
+        2.0548605918884277,
+        -1.5141290426254272,
+        -2.9322996139526367,
+        0.2874934673309326
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01802.png",
+      "img_idx": 1802,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.26956820487976074,
+        -0.345486581325531,
+        -1.5164427757263184,
+        -1.726510763168335,
+        3.3225693702697754
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01826.png",
+      "img_idx": 1826,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.3900906443595886,
+        -0.9120646119117737,
+        -1.2505991458892822,
+        -1.6984279155731201,
+        3.7716097831726074
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01833.png",
+      "img_idx": 1833,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.4134982228279114,
+        -0.7236443161964417,
+        -1.1143046617507935,
+        -1.0731102228164673,
+        3.0831921100616455
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01836.png",
+      "img_idx": 1836,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.8494482636451721,
+        2.050398349761963,
+        -2.130463123321533,
+        -2.28792667388916,
+        1.918752908706665
+      ],
+      "prediction": 1
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01862.png",
+      "img_idx": 1862,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        1.267503023147583,
+        -0.506139874458313,
+        -1.8072751760482788,
+        -1.8258755207061768,
+        2.6667563915252686
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01888.png",
+      "img_idx": 1888,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.7591853737831116,
+        1.6930137872695923,
+        -2.5395636558532715,
+        -2.443458318710327,
+        2.741809368133545
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01913.png",
+      "img_idx": 1913,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        -0.008103221654891968,
+        0.9494858384132385,
+        -1.971850872039795,
+        -1.8603131771087646,
+        2.9245779514312744
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01927.png",
+      "img_idx": 1927,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        0.3225523829460144,
+        0.7720786929130554,
+        -1.4760628938674927,
+        -2.0064926147460938,
+        2.1149184703826904
+      ],
+      "prediction": 4
+    },
+    {
+      "filename": "04_swallowtail_herbivory_01946.png",
+      "img_idx": 1946,
+      "class": "swallowtail_herbivory",
+      "class_idx": 4,
+      "logits": [
+        -0.23577874898910522,
+        -0.46100324392318726,
+        -1.774757742881775,
+        -1.475895881652832,
+        3.8170759677886963
+      ],
+      "prediction": 4
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "description": "Golden quality-gate metric values for 20 training images (4 per class, folds 0,1,3,4 only, NOT fold 2, NOT test). Used for on-device unit test.",
+  "metric_definitions": {
+    "sharpness": "Variance of Laplacian of grayscale image. Grayscale = mean of R,G,B channels (uint8 \u2192 float32). NOT weighted luma. Reject if < lower threshold (too blurry).",
+    "exposure": "Mean pixel brightness (0\u20131 scale). mean of all channels / 255. Reject if outside [lower, upper].",
+    "border_brightness": "Mean brightness of border pixels (outer 5% on each side). mean of border pixel values / 255. Reject if < lower threshold (background not white enough).",
+    "saturation": "Mean HSV saturation (0\u20131 scale, pure numpy). sat = (max_rgb - min_rgb) / max_rgb per pixel, mean over image. Reject if outside [lower, upper]."
+  },
+  "computation_resolution": "384\u00d7384 uint8 (centre-cropped, as stored in cache/imgs_384.npy)",
+  "grayscale_conversion": "mean of RGB channels (not weighted luma)",
+  "border_fraction": 0.05,
+  "tolerance_for_on_device_match": {
+    "sharpness": 1.0,
+    "exposure": 0.001,
+    "border_brightness": 0.001,
+    "saturation": 0.001,
+    "note": "On-device values computed on the same 384\u00d7384 uint8 image should match the Python reference within these tolerances. Larger sharpness tolerance is because Laplacian implementations may use different padding/kernel conventions."
+  },
+  "gate_thresholds_applied": {
+    "sharpness_lower": 209.67474548339842,
+    "exposure_lower": 0.6252622144778051,
+    "exposure_upper": 0.8708290682303013,
+    "border_brightness_lower": 0.9451720380403623,
+    "saturation_lower": 0.11685005217790603,
+    "saturation_upper": 0.33983328342437724
+  },
+  "n_images": 20,
+  "images_per_class": 4,
+  "source": "Training folds 0,1,3,4 (n=1245); first 4 by index per class",
+  "images": [
+    {
+      "index": 0,
+      "class": "citrus_huanglongbing",
+      "metrics": {
+        "sharpness": 579.999939,
+        "exposure": 0.776161,
+        "border_brightness": 0.990238,
+        "saturation": 0.121969
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 1,
+      "class": "citrus_huanglongbing",
+      "metrics": {
+        "sharpness": 606.384033,
+        "exposure": 0.695324,
+        "border_brightness": 0.979251,
+        "saturation": 0.211211
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 3,
+      "class": "citrus_huanglongbing",
+      "metrics": {
+        "sharpness": 783.923645,
+        "exposure": 0.832456,
+        "border_brightness": 0.986459,
+        "saturation": 0.207286
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 8,
+      "class": "citrus_huanglongbing",
+      "metrics": {
+        "sharpness": 612.018372,
+        "exposure": 0.763856,
+        "border_brightness": 0.987651,
+        "saturation": 0.270434
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 149,
+      "class": "citrus_leaf_curl",
+      "metrics": {
+        "sharpness": 383.106567,
+        "exposure": 0.75609,
+        "border_brightness": 0.996061,
+        "saturation": 0.221456
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 150,
+      "class": "citrus_leaf_curl",
+      "metrics": {
+        "sharpness": 308.935364,
+        "exposure": 0.810214,
+        "border_brightness": 0.97401,
+        "saturation": 0.14965
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 152,
+      "class": "citrus_leaf_curl",
+      "metrics": {
+        "sharpness": 596.354065,
+        "exposure": 0.80488,
+        "border_brightness": 0.993506,
+        "saturation": 0.219213
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 154,
+      "class": "citrus_leaf_curl",
+      "metrics": {
+        "sharpness": 533.322083,
+        "exposure": 0.706474,
+        "border_brightness": 0.982231,
+        "saturation": 0.286383
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 425,
+      "class": "citrus_leafminer",
+      "metrics": {
+        "sharpness": 764.146301,
+        "exposure": 0.761204,
+        "border_brightness": 0.983143,
+        "saturation": 0.195674
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 426,
+      "class": "citrus_leafminer",
+      "metrics": {
+        "sharpness": 785.588379,
+        "exposure": 0.760319,
+        "border_brightness": 0.982616,
+        "saturation": 0.196101
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 427,
+      "class": "citrus_leafminer",
+      "metrics": {
+        "sharpness": 1938.53772,
+        "exposure": 0.653247,
+        "border_brightness": 0.974592,
+        "saturation": 0.289685
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 429,
+      "class": "citrus_leafminer",
+      "metrics": {
+        "sharpness": 645.907959,
+        "exposure": 0.745668,
+        "border_brightness": 0.98445,
+        "saturation": 0.25545
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 837,
+      "class": "healthy_lemon_leaf",
+      "metrics": {
+        "sharpness": 802.124146,
+        "exposure": 0.737807,
+        "border_brightness": 0.984723,
+        "saturation": 0.254257
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 838,
+      "class": "healthy_lemon_leaf",
+      "metrics": {
+        "sharpness": 770.020386,
+        "exposure": 0.723109,
+        "border_brightness": 0.982841,
+        "saturation": 0.251437
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 839,
+      "class": "healthy_lemon_leaf",
+      "metrics": {
+        "sharpness": 1252.087036,
+        "exposure": 0.741955,
+        "border_brightness": 0.981958,
+        "saturation": 0.247433
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 840,
+      "class": "healthy_lemon_leaf",
+      "metrics": {
+        "sharpness": 727.856201,
+        "exposure": 0.747226,
+        "border_brightness": 0.988231,
+        "saturation": 0.24377
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 1455,
+      "class": "swallowtail_herbivory",
+      "metrics": {
+        "sharpness": 580.688293,
+        "exposure": 0.800209,
+        "border_brightness": 0.989716,
+        "saturation": 0.17222
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 1456,
+      "class": "swallowtail_herbivory",
+      "metrics": {
+        "sharpness": 451.096313,
+        "exposure": 0.871811,
+        "border_brightness": 0.986286,
+        "saturation": 0.116788
+      },
+      "gate_pass": false
+    },
+    {
+      "index": 1457,
+      "class": "swallowtail_herbivory",
+      "metrics": {
+        "sharpness": 877.383789,
+        "exposure": 0.75544,
+        "border_brightness": 0.989841,
+        "saturation": 0.197702
+      },
+      "gate_pass": true
+    },
+    {
+      "index": 1458,
+      "class": "swallowtail_herbivory",
+      "metrics": {
+        "sharpness": 2278.041748,
+        "exposure": 0.668772,
+        "border_brightness": 0.986348,
+        "saturation": 0.271513
+      },
+      "gate_pass": true
+    }
+  ]
+}
